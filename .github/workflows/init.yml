@@ -1,0 +1,68 @@
+# Copie unique : reprend le site SysCo-RCU/planning-cnam et l'adapte à la filière ING7400A (BTP).
+# Ce fichier sera supprimé juste après son passage.
+name: Initialisation du site BTP
+
+on:
+  push:
+    paths: ['.github/workflows/init.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  copier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+
+      - name: Copier et adapter le site
+        run: |
+          git clone --depth 1 https://github.com/SysCo-RCU/planning-cnam.git "$RUNNER_TEMP/src"
+          cat > "$RUNNER_TEMP/init.sh" <<'SCRIPT'
+          #!/usr/bin/env bash
+          # Copie le site planning-cnam (dépôt public) et l'adapte à la filière ING7400A (BTP).
+          # Usage : init.sh DOSSIER_SOURCE   (lancé à la racine du dépôt planning-cnam-btp)
+          set -euo pipefail
+          SRC="$1"
+
+          tar -C "$SRC" --exclude=./.git --exclude=./.github --exclude=./data --exclude=./planning.ics \
+            --exclude=./calendrier.pdf --exclude=./node_modules --exclude=./debug -cf - . | tar -xf -
+          mkdir -p data
+
+          # réglages, votes, fichiers déposés… gardés à part de ceux de la page ING36 (même adresse sysco-rcu.github.io)
+          sed -i 's/planning-cnam:/planning-cnam-btp:/g' *.js *.html
+          sed -i 's/sysco-rcu-planning-cnam-/sysco-rcu-planning-cnam-btp-/g' compteur.js grille-sondages.js
+          sed -i "s/'cnam-compteur2'/'cnam-btp-compteur2'/g; s/'cnam-visiteur'/'cnam-btp-visiteur'/g; s/'cnam-enligne2'/'cnam-btp-enligne2'/g" compteur.js
+
+          # nom de la page et de la filière
+          sed -i 's|<title>Planning Cnam</title>|<title>Planning Cnam BTP</title>|; s|<h1>Planning Cnam</h1>|<h1>Planning Cnam BTP</h1>|' index.html
+          sed -i 's/ING3600A/ING7400A/g; s/Planning Cnam/Planning Cnam BTP/g' pdfvue.js mentions-legales.html
+          sed -i 's/Dernière mise à jour : [0-9]* [a-zé]* 20[0-9]*/Dernière mise à jour : 26 novembre 2026/' mentions-legales.html
+          sed -i 's/Planning Cnam/Planning Cnam BTP/g' export-pdf.js
+          sed -i 's/Planning Cnam :/Planning Cnam BTP :/g; s/Suivi du planning Cnam activé/Suivi du planning Cnam BTP activé/' scraper/scrape.mjs
+          sed -i 's/X-WR-CALNAME:Planning Cnam/X-WR-CALNAME:Planning Cnam BTP/; s/@planning-cnam`/@planning-cnam-btp`/; s/Planning Cnam :/Planning Cnam BTP :/; s/"Planning Cnam (ne pas/"Planning Cnam BTP (ne pas/; s/opacity:.85">Planning Cnam</opacity:.85">Planning Cnam BTP</' scraper/lib.mjs
+          sed -i 's/Planning Cnam – Documents de la promo/Planning Cnam BTP – Documents de la promo/' apps-script/Code.gs
+
+          # calendrier officiel ING7400A (même rythme Cnam / entreprise que l'ING3600A, vérifié jour par jour)
+          node -e '
+          const fs = require("fs");
+          const c = JSON.parse(fs.readFileSync(process.argv[1] + "/data/calendrier.json", "utf8"));
+          c.source = "Calendrier prévisionnel Cnam Grand Est – ING7400A Nancy 2025-2028";
+          c.jours["2027-09-01"] = "ent";
+          c.jours = Object.fromEntries(Object.entries(c.jours).sort());
+          const lignes = Object.entries(c.jours).map(([k, v]) => `  ${JSON.stringify(k)}: ${JSON.stringify(v)}`);
+          fs.writeFileSync("data/calendrier.json", `{\n"source": ${JSON.stringify(c.source)},\n"jours": {\n${lignes.join(",\n")}\n}\n}\n`);
+          ' "$SRC"
+
+          # sondages et documents : serveur propre à la promo BTP (adresse ajoutée ensuite)
+          printf '{\n  "api": "",\n  "sondages": []\n}\n' > data/sondages.json
+          SCRIPT
+          bash "$RUNNER_TEMP/init.sh" "$RUNNER_TEMP/src"
+
+      - name: Enregistrer
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Site du planning Cnam BTP (ING7400A), copié de planning-cnam"
+          git push
