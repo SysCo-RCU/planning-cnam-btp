@@ -1,0 +1,13 @@
+{
+  "name": "planning-cnam",
+  "private": true,
+  "type": "module",
+  "description": "Planning Cnam lisible + alertes en cas de modification",
+  "scripts": {
+    "scrape": "node scraper/scrape.mjs"
+  },
+  "dependencies": {
+    "nodemailer": "10.6.1",
+    "playwright": "1.65.1"
+  }
+}

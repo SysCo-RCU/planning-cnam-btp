@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Planning Cnam BTP</title>
+<meta name="theme-color" content="#c1002a">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c1002a'/%3E%3Crect x='14' y='18' width='36' height='32' rx='5' fill='none' stroke='white' stroke-width='4'/%3E%3Cpath d='M14 28h36M24 12v10M40 12v10' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://countapi.mileshilliard.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="extras.css?v=2">
+<link rel="stylesheet" href="reglages.css?v=2">
+<link rel="stylesheet" href="grille-sondages.css">
+<link rel="stylesheet" href="documents.css?v=2">
+<script>/* réglages appliqués avant l'affichage (évite un flash de mauvais thème) */
+try{var r=JSON.parse(localStorage.getItem('planning-cnam-btp:reglages')||'{}'),h=document.documentElement;
+h.dataset.theme=r.theme||'auto';h.dataset.accent=r.accent||'cnam';h.dataset.taille=r.taille||'normal';
+if(r.langue==='en')h.lang='en';['frise','compteur','fantomes','animations'].forEach(function(k){if(r[k]===false)h.classList.add('sans-'+k)});
+if(r.compact)h.classList.add('compact')}catch(e){}</script>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></div>
+    <div class="brand"><h1>Planning Cnam BTP</h1><p id="subtitle">Grand Est</p></div>
+    <div class="spacer"></div>
+    <div class="status vues" id="vues" hidden></div>
+    <div class="status" id="status"><span class="dot"></span><span>Chargement…</span></div>
+    <button class="btn ghost" id="reglagesBtn" type="button" aria-label="Paramètres" title="Paramètres">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg><span>Paramètres</span></button>
+    <a class="btn ghost" id="ics" href="planning.ics" title="Ajouter à mon agenda (Google, Apple, Outlook)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg><span>Agenda</span></a>
+  </header>
+
+  <div id="alert"></div>
+  <section class="hero" id="hero"></section>
+  <section id="frise"></section>
+
+  <div class="bar">
+    <div class="tabs" role="tablist" id="tabs">
+      <button class="tab" role="tab" data-tab="week" aria-selected="true">Semaine</button>
+      <button class="tab" role="tab" data-tab="month">Mois</button>
+      <button class="tab" role="tab" data-tab="list">À venir</button>
+      <button class="tab" role="tab" data-tab="exams">Examens</button>
+      <button class="tab" role="tab" data-tab="ue">Avancement</button>
+      <button class="tab" role="tab" data-tab="changes"><span class="lg">Modifications</span><span class="sh">Modifs</span></button>
+      <button class="tab" role="tab" data-tab="sondages"><span>Sondages</span></button>
+      <button class="tab" role="tab" data-tab="docs"><span>Documents</span></button>
+    </div>
+    <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Rechercher un cours, un prof, une salle, « Metz »…" autocomplete="off" aria-label="Rechercher"><kbd>/</kbd></label>
+    <div class="weeknav" id="weeknav">
+      <button class="ib" id="prev" aria-label="Semaine précédente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <div class="lbl" id="weeklbl"></div>
+      <button class="ib" id="next" aria-label="Semaine suivante"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+      <button class="btn ghost" id="todayBtn">Aujourd'hui</button>
+    </div>
+  </div>
+  <div class="chips" id="chips"></div>
+  <main id="view"></main>
+
+  <footer>
+    <span>Données issues du planning auditeur Cnam Grand Est · vérifiées automatiquement</span>
+    <span id="foot"></span>
+    <a href="mentions-legales.html" style="color:inherit">Mentions légales</a>
+  </footer>
+</div>
+
+<dialog id="dlg"></dialog>
+
+<script src="app.js"></script>
+<script src="vues.js"></script>
+<script src="extras.js"></script>
+<script src="compteur.js?v=5"></script>
+<script src="pdfvue.js"></script>
+<script src="grille-sondages.js"></script>
+<script src="documents.js?v=3"></script>
+<script src="reglages.js"></script>
+<script src="notif.js"></script>
+<script src="export-pdf.js?v=4"></script>
+</body>
+</html>

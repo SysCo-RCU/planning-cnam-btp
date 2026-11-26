@@ -1,0 +1,37 @@
+/* Onglet « Documents » (espace partagé de la promo) — reprend le style des sondages */
+.dcgs{display:flex;flex-direction:column;gap:10px}
+.dcc{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:12px 14px}
+.dcico{flex:none;width:42px;height:42px;border-radius:10px;display:grid;place-items:center;font-size:11px;font-weight:800;letter-spacing:.02em;color:#fff;background:var(--c,#6b6570)}
+.dcc-t{flex:1;min-width:0}
+.dcc-nom{display:block;font-weight:700;font-size:15px;color:var(--ink);text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dcc-nom:hover{text-decoration:underline}
+.dcc-meta{font-size:12.5px;color:var(--ink3);margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dcc-a{flex:none;display:flex;align-items:center;gap:6px}
+.dcb{display:grid;place-items:center;width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+.dcb:hover{border-color:var(--ink3)}
+.dcb svg{width:18px;height:18px}
+.dcg-filtre{font:inherit;font-size:15px;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:10px;min-height:42px;padding:0 12px;width:100%;max-width:420px;margin-bottom:12px}
+.dcg-filtre[hidden]{display:none}
+/* formulaire de dépôt */
+.dcf-zone{position:relative;cursor:pointer}
+.dcf-zone input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;min-height:0}
+.dcf-choix{display:flex;flex-direction:column;align-items:center;gap:4px;padding:18px 12px;border:1.5px dashed var(--ink3);border-radius:12px;background:var(--bg);text-align:center}
+.dcf-choix b{font-size:15px;color:var(--ink)}
+.dcf-choix small{font-size:12px;font-weight:500;color:var(--ink3)}
+.dcf-choix svg{width:22px;height:22px;color:var(--red)}
+.dcf-zone:hover .dcf-choix{border-color:var(--red)}
+.dcf-liste{list-style:none;display:flex;flex-direction:column;gap:6px}
+.dcf-liste:empty{display:none}
+.dcf-liste li{display:flex;align-items:center;gap:10px;font-size:13.5px}
+.dcf-liste .dcico{width:30px;height:30px;font-size:9px;border-radius:8px}
+.dcf-nom{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600}
+.dcf-et{flex:none;font-size:12px;color:var(--ink3);font-family:var(--mono)}
+.dcf-liste li.ko .dcf-et{color:var(--red);font-family:inherit;font-weight:700}
+.dcf-liste li.ok .dcf-et{color:var(--ok);font-weight:700}
+.dcf-liste li.en .dcf-et{color:var(--ink)}
+@media (max-width:560px){
+  .dcc{padding:10px 12px;gap:10px}
+  .dcico{width:36px;height:36px;font-size:10px}
+  .dcb{width:38px;height:38px}
+  .dcc-a{gap:4px}
+}
