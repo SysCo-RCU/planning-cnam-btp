@@ -1,0 +1,1012 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//planning-cnam//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Planning Cnam BTP
+X-WR-TIMEZONE:Europe/Paris
+REFRESH-INTERVAL;VALUE=DURATION:PT2H
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3407d2c9b490b7cfb990@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261123T090000
+DTEND;TZID=Europe/Paris:20261123T123000
+SUMMARY:USBA07 – Fondations
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M AL MAHMOUD Firas\nSéance 23/50\nU
+ E : Sciences et techniques de l'ingénieur BTP 3
+END:VEVENT
+BEGIN:VEVENT
+UID:fa192415ec27355cf6c5@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261123T133000
+DTEND;TZID=Europe/Paris:20261123T170000
+SUMMARY:USBA09
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M CONSOLI Francois-Xavier\nSéance 5
+ /11
+END:VEVENT
+BEGIN:VEVENT
+UID:e308335f89fcae37bf81@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261124T090000
+DTEND;TZID=Europe/Paris:20261124T123000
+SUMMARY:USBA10 – THERMIQUE
+LOCATION:Salle 13 – Centre de Nancy
+DESCRIPTION:Type : TPAE\nEnseignant : Mme SCOLARITÉ Surveillant.e\nSéance
+  7/19\nUE : Sciences et techniques de l'ingénieur BTP 4
+END:VEVENT
+BEGIN:VEVENT
+UID:05187df564a05f8f8879@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261124T133000
+DTEND;TZID=Europe/Paris:20261124T170000
+SUMMARY:USBA10 – THERMIQUE
+LOCATION:Salle 13 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M NASRI Nacer\nSéance 8/19\nUE : Sc
+ iences et techniques de l'ingénieur BTP 4
+END:VEVENT
+BEGIN:VEVENT
+UID:7119614fab66334828f7@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261125T090000
+DTEND;TZID=Europe/Paris:20261125T123000
+SUMMARY:USBA10 – THERMIQUE
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M NASRI Nacer\nSéance 9/19\nUE : Sc
+ iences et techniques de l'ingénieur BTP 4
+END:VEVENT
+BEGIN:VEVENT
+UID:c4399d6d61db68fc1652@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261125T133000
+DTEND;TZID=Europe/Paris:20261125T170000
+SUMMARY:USBA09
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M CONSOLI Francois-Xavier\nSéance 6
+ /11
+END:VEVENT
+BEGIN:VEVENT
+UID:753d5effbdaad0c3d609@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261126T090000
+DTEND;TZID=Europe/Paris:20261126T123000
+SUMMARY:USBA07 – Fondations
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M AL MAHMOUD Firas\nSéance 24/50\nU
+ E : Sciences et techniques de l'ingénieur BTP 3
+END:VEVENT
+BEGIN:VEVENT
+UID:f4fe5b2cbaa7dea48a3b@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261126T133000
+DTEND;TZID=Europe/Paris:20261126T170000
+SUMMARY:USBA12
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours mutualisé\nEnseignant : M CONSOLI Francois-Xavier
+ \nSéance 16/57
+END:VEVENT
+BEGIN:VEVENT
+UID:b4b9e686f9da86de5813@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261127T090000
+DTEND;TZID=Europe/Paris:20261127T123000
+SUMMARY:USBA10 – THERMIQUE
+LOCATION:Distanciel – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M NASRI Nacer\nSéance 10/19\nUE : S
+ ciences et techniques de l'ingénieur BTP 4
+END:VEVENT
+BEGIN:VEVENT
+UID:cd2d50e3962a95b1dda2@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261130T133000
+DTEND;TZID=Europe/Paris:20261130T163000
+SUMMARY:📝 USBA07 – Soutènements (Examen)
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Examen\nEnseignant : M AL MAHMOUD Firas\nSéance 25/50\n
+ UE : Sciences et techniques de l'ingénieur BTP 3\nComposition en présent
+ iel
+END:VEVENT
+BEGIN:VEVENT
+UID:954d95b69ad32bd8ab3d@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261202T090000
+DTEND;TZID=Europe/Paris:20261202T123000
+SUMMARY:USBA10 – THERMIQUE
+LOCATION:Salle 303 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M NASRI Nacer\nSéance 11/19\nUE : S
+ ciences et techniques de l'ingénieur BTP 4
+END:VEVENT
+BEGIN:VEVENT
+UID:fc2ae1c347e882a3fd02@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261203T133000
+DTEND;TZID=Europe/Paris:20261203T170000
+SUMMARY:USBA12
+LOCATION:Salle 201 – Centre de Nancy
+DESCRIPTION:Type : Cours mutualisé\nEnseignant : M CONSOLI Francois-Xavier
+ \nSéance 19/57
+END:VEVENT
+BEGIN:VEVENT
+UID:f1911abe86fd4352c03b@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261204T090000
+DTEND;TZID=Europe/Paris:20261204T110000
+SUMMARY:📝 USBA10 – THERMIQUE (Examen)
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Examen\nEnseignant : M NASRI Nacer\nSéance 12/19\nUE : 
+ Sciences et techniques de l'ingénieur BTP 4\nComposition en présentiel
+END:VEVENT
+BEGIN:VEVENT
+UID:d1e409c6259d872bb2eb@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261207T090000
+DTEND;TZID=Europe/Paris:20261207T123000
+SUMMARY:USR24K – Innovation et Intelligence stragétique
+LOCATION:Salle 201 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  1/33\nUE : Transitions S7
+END:VEVENT
+BEGIN:VEVENT
+UID:b1a4686edb0a62d5690a@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261207T090000
+DTEND;TZID=Europe/Paris:20261207T123000
+SUMMARY:USR24K – Innovation et Intelligence stragétique
+LOCATION:Salle 01 – Centre de Nancy
+DESCRIPTION:Type : Cours Transition\nEnseignant : M GRIFFITHS Stéphane\nS
+ éance 1/33\nUE : Transitions S7
+END:VEVENT
+BEGIN:VEVENT
+UID:a4f5f4ad595b198ba899@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261207T133000
+DTEND;TZID=Europe/Paris:20261207T170000
+SUMMARY:USR24K – Innovation et Intelligence stragétique
+LOCATION:Salle 201 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  3/33\nUE : Transitions S7
+END:VEVENT
+BEGIN:VEVENT
+UID:c33e8d18289077d7980b@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261207T133000
+DTEND;TZID=Europe/Paris:20261207T170000
+SUMMARY:USR24K – Innovation et Intelligence stragétique
+LOCATION:Salle 01 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  3/33\nUE : Transitions S7
+END:VEVENT
+BEGIN:VEVENT
+UID:a659e03b49aee1d1ae9f@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261208T090000
+DTEND;TZID=Europe/Paris:20261208T123000
+SUMMARY:USR24K
+LOCATION:Salle 201 – Centre de Nancy
+DESCRIPTION:Type : Cours Transition\nEnseignant : M CLAIRE Johan\nSéance 5
+ /33\nThématique : Lancement Sérious game
+END:VEVENT
+BEGIN:VEVENT
+UID:549967e9e95b71992259@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261208T133000
+DTEND;TZID=Europe/Paris:20261208T170000
+SUMMARY:USR24K
+LOCATION:Salle 106 – Centre de Nancy
+DESCRIPTION:Type : Cours Transition\nEnseignant : Mme HANNA Marie\nSéance 
+ 6/33\nThématique : Lancement Sérious game
+END:VEVENT
+BEGIN:VEVENT
+UID:0dcb2f598ab1a095883d@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261208T133000
+DTEND;TZID=Europe/Paris:20261208T170000
+SUMMARY:USR24K
+LOCATION:Salle 201 – Centre de Nancy
+DESCRIPTION:Type : Cours Transition\nEnseignant : M CLAIRE Johan\nSéance 6
+ /33\nThématique : Lancement Sérious game
+END:VEVENT
+BEGIN:VEVENT
+UID:355d2e9dbbf3b7ef46c9@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261210T090000
+DTEND;TZID=Europe/Paris:20261210T123000
+SUMMARY:USR24K – Entreprenariat Intrapreneuriat
+LOCATION:Salle 108 – Centre de Nancy
+DESCRIPTION:Type : Cnamathon\nEnseignant : Mme HANNA Marie\nSéance 8/33\nU
+ E : Transitions S7\nThématique : Lancement Sérious game
+END:VEVENT
+BEGIN:VEVENT
+UID:1688076b9f966190bf2b@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261210T133000
+DTEND;TZID=Europe/Paris:20261210T170000
+SUMMARY:USR24K – Entreprenariat Intrapreneuriat
+LOCATION:Salle 108 – Centre de Nancy
+DESCRIPTION:Type : Cnamathon\nEnseignant : Mme HANNA Marie\nSéance 9/33\nU
+ E : Transitions S7\nThématique : Lancement Sérious game
+END:VEVENT
+BEGIN:VEVENT
+UID:6d1314af8e5e6a915858@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261211T090000
+DTEND;TZID=Europe/Paris:20261211T123000
+SUMMARY:USR24K – Entreprenariat Intrapreneuriat
+LOCATION:Salle 108 – Centre de Nancy
+DESCRIPTION:Type : Cnamathon\nEnseignant : Mme HANNA Marie\nSéance 10/33\n
+ UE : Transitions S7\nThématique : Lancement Sérious game
+END:VEVENT
+BEGIN:VEVENT
+UID:578145f1c0509d2fb7c8@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20261211T133000
+DTEND;TZID=Europe/Paris:20261211T170000
+SUMMARY:USR24K – Entreprenariat Intrapreneuriat
+LOCATION:Salle 108 – Centre de Nancy
+DESCRIPTION:Type : Cnamathon\nEnseignant : Mme HANNA Marie\nSéance 11/33\n
+ UE : Transitions S7\nThématique : Lancement Sérious game
+END:VEVENT
+BEGIN:VEVENT
+UID:3e1b748ff0837ed2b91c@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270111T090000
+DTEND;TZID=Europe/Paris:20270111T123000
+SUMMARY:USBA07 – Voirie et réseaux divers
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : Mme MAURICE Sylvie\nSéance 26/50\nU
+ E : Sciences et techniques de l'ingénieur BTP 3\nThématique : Lancement 
+ Sérious game
+END:VEVENT
+BEGIN:VEVENT
+UID:e227a166bf40ff5c0c32@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270114T090000
+DTEND;TZID=Europe/Paris:20270114T123000
+SUMMARY:USBA07 – Fondations
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M AL MAHMOUD Firas\nSéance 27/50\nU
+ E : Sciences et techniques de l'ingénieur BTP 3\nThématique : Lancement 
+ Sérious game
+END:VEVENT
+BEGIN:VEVENT
+UID:f74cdfb4852c1d94d55d@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270114T133000
+DTEND;TZID=Europe/Paris:20270114T170000
+SUMMARY:USBA12
+LOCATION:Salle 01 – Centre de Nancy
+DESCRIPTION:Type : Cours mutualisé\nEnseignant : M CONSOLI Francois-Xavier
+ \nSéance 22/57\nThématique : Lancement Sérious game
+END:VEVENT
+BEGIN:VEVENT
+UID:f54164f5e145921b7d6c@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270115T090000
+DTEND;TZID=Europe/Paris:20270115T123000
+SUMMARY:USBA07 – Fondations
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M AL MAHMOUD Firas\nSéance 28/50\nU
+ E : Sciences et techniques de l'ingénieur BTP 3\nThématique : Lancement 
+ Sérious game
+END:VEVENT
+BEGIN:VEVENT
+UID:147fce9aa5162417c849@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270118T090000
+DTEND;TZID=Europe/Paris:20270118T123000
+SUMMARY:USBA07 – Voirie et réseaux divers
+LOCATION:Salle 01 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : Mme MAURICE Sylvie\nSéance 29/50\nU
+ E : Sciences et techniques de l'ingénieur BTP 3\nThématique : Lancement 
+ Sérious game
+END:VEVENT
+BEGIN:VEVENT
+UID:d6462c8f485cefadcf3d@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270119T090000
+DTEND;TZID=Europe/Paris:20270119T123000
+SUMMARY:USR24K – Innovation et Intelligence stragétique
+LOCATION:Salle 201 – Centre de Nancy
+DESCRIPTION:Type : Cours Transition\nEnseignant : Mme HANNA Marie\nSéance 
+ 12/33\nUE : Transitions S7\nThématique : INNOVATION Restitution de l’ex
+ ploration & atelier Attributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:31837b5ab2bb4fc3a040@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270119T133000
+DTEND;TZID=Europe/Paris:20270119T170000
+SUMMARY:USR24K – Innovation et Intelligence stragétique
+LOCATION:Salle 201 – Centre de Nancy
+DESCRIPTION:Type : Cours Transition\nEnseignant : Mme HANNA Marie\nSéance 
+ 13/33\nUE : Transitions S7\nThématique : INNOVATION Restitution de l’ex
+ ploration & atelier Attributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:9d7eda65b5042d92e3d4@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270120T090000
+DTEND;TZID=Europe/Paris:20270120T123000
+SUMMARY:USBA07 – Fondations
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M AL MAHMOUD Firas\nSéance 30/50\nU
+ E : Sciences et techniques de l'ingénieur BTP 3\nThématique : INNOVATION
+  Restitution de l’exploration & atelier Attributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:4a081b24c7f6e7156fa8@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270121T133000
+DTEND;TZID=Europe/Paris:20270121T170000
+SUMMARY:USBA12
+LOCATION:Salle 01 – Centre de Nancy
+DESCRIPTION:Type : Cours mutualisé\nEnseignant : M CONSOLI Francois-Xavier
+ \nSéance 25/57\nThématique : INNOVATION Restitution de l’exploration &
+  atelier Attributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:1b1a6ce14dc7cfc75363@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270122T090000
+DTEND;TZID=Europe/Paris:20270122T110000
+SUMMARY:📝 USBA07 – Fondations (Examen)
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Examen\nEnseignant : M AL MAHMOUD Firas\nSéance 31/50\n
+ UE : Sciences et techniques de l'ingénieur BTP 3\nComposition en présent
+ iel · Thématique : INNOVATION Restitution de l’exploration & atelier A
+ ttributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:883690fbc1166db7aa0d@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270125T090000
+DTEND;TZID=Europe/Paris:20270125T123000
+SUMMARY:USR24K
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : Mme EN COURS RECRUTEMENT ENSEI
+ GNANT\nSéance 14/33\nThématique : INNOVATION Restitution de l’explorat
+ ion & atelier Attributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:c0ada5e9d8710d61949f@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270125T090000
+DTEND;TZID=Europe/Paris:20270125T123000
+SUMMARY:USR24K
+LOCATION:Salle 108 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : Mme EN COURS RECRUTEMENT ENSEI
+ GNANT\nSéance 14/33\nThématique : INNOVATION Restitution de l’explorat
+ ion & atelier Attributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:94e6ecb428551cdefc84@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270125T090000
+DTEND;TZID=Europe/Paris:20270125T123000
+SUMMARY:USR24K
+LOCATION:Salle 106 – Centre de Nancy
+DESCRIPTION:Type : TPAE\nEnseignant : Mme EN COURS RECRUTEMENT ENSEIGNANT\n
+ Séance 14/33\nThématique : INNOVATION Restitution de l’exploration & a
+ telier Attributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:8b90128d944433fb4219@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270125T133000
+DTEND;TZID=Europe/Paris:20270125T170000
+SUMMARY:USR24K
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : Mme EN COURS RECRUTEMENT ENSEI
+ GNANT\nSéance 17/33\nThématique : INNOVATION Restitution de l’explorat
+ ion & atelier Attributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:f61ccab00216de60c4b3@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270125T133000
+DTEND;TZID=Europe/Paris:20270125T170000
+SUMMARY:USR24K
+LOCATION:Salle 108 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : Mme EN COURS RECRUTEMENT ENSEI
+ GNANT\nSéance 17/33\nThématique : INNOVATION Restitution de l’explorat
+ ion & atelier Attributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:6d6b147e8c1ba3126f1e@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270125T133000
+DTEND;TZID=Europe/Paris:20270125T170000
+SUMMARY:USR24K
+LOCATION:Salle 106 – Centre de Nancy
+DESCRIPTION:Type : TPAE\nEnseignant : Mme EN COURS RECRUTEMENT ENSEIGNANT\n
+ Séance 17/33\nThématique : INNOVATION Restitution de l’exploration & a
+ telier Attributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:86831ee9a718d337f9e7@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270126T090000
+DTEND;TZID=Europe/Paris:20270126T123000
+SUMMARY:USR24K
+LOCATION:Salle 201 – Centre de Nancy
+DESCRIPTION:Type : Cours Transition\nEnseignant : Mme HANNA Marie\nSéance 
+ 20/33\nThématique : INNOVATION Restitution de l’exploration & atelier A
+ ttributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:ced30582fa1a5664d2a2@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270126T133000
+DTEND;TZID=Europe/Paris:20270126T170000
+SUMMARY:USR24K
+LOCATION:Salle 201 – Centre de Nancy
+DESCRIPTION:Type : Cours Transition\nEnseignant : Mme HANNA Marie\nSéance 
+ 21/33\nThématique : INNOVATION Restitution de l’exploration & atelier A
+ ttributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:8727e6baa8a6d2ef1ee5@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270127T090000
+DTEND;TZID=Europe/Paris:20270127T123000
+SUMMARY:USR24K – Innovation et Intelligence stragétique
+LOCATION:Salle 13 – Centre de Nancy
+DESCRIPTION:Type : Cours Transition\nEnseignant : M GARENC Philippe\nSéanc
+ e 22/33\nUE : Transitions S7\nThématique : INNOVATION Restitution de l’
+ exploration & atelier Attributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:6948e03322e5e69911a4@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270127T090000
+DTEND;TZID=Europe/Paris:20270127T123000
+SUMMARY:USR24K
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  22/33\nThématique : INNOVATION Restitution de l’exploration & atelier 
+ Attributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:8448fbf7503aae118f93@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270127T090000
+DTEND;TZID=Europe/Paris:20270127T123000
+SUMMARY:USR24K
+LOCATION:Salle 108 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  22/33\nThématique : INNOVATION Restitution de l’exploration & atelier 
+ Attributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:c9160ca75ea5030dcc56@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270127T133000
+DTEND;TZID=Europe/Paris:20270127T170000
+SUMMARY:USR24K – Innovation et Intelligence stragétique
+LOCATION:Salle 13 – Centre de Nancy
+DESCRIPTION:Type : Cours Transition\nEnseignant : M GARENC Philippe\nSéanc
+ e 25/33\nUE : Transitions S7\nThématique : INNOVATION Restitution de l’
+ exploration & atelier Attributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:06fa59d91c0dec5c5ae0@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270127T133000
+DTEND;TZID=Europe/Paris:20270127T170000
+SUMMARY:USR24K – Entreprenariat Intrapreneuriat
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  25/33\nUE : Transitions S7\nThématique : INNOVATION Restitution de l’e
+ xploration & atelier Attributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:65462f0a38fb280acf05@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270127T133000
+DTEND;TZID=Europe/Paris:20270127T170000
+SUMMARY:USR24K – Entreprenariat Intrapreneuriat
+LOCATION:Salle 108 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  25/33\nUE : Transitions S7\nThématique : INNOVATION Restitution de l’e
+ xploration & atelier Attributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:7ff2059c73c729c8226f@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270128T133000
+DTEND;TZID=Europe/Paris:20270128T170000
+SUMMARY:USBA12
+LOCATION:Salle 303 – Centre de Nancy
+DESCRIPTION:Type : Cours mutualisé\nEnseignant : M CONSOLI Francois-Xavier
+ \nSéance 28/57\nThématique : INNOVATION Restitution de l’exploration &
+  atelier Attributs®
+END:VEVENT
+BEGIN:VEVENT
+UID:08a2590f611dce16bd69@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270129T090000
+DTEND;TZID=Europe/Paris:20270129T140000
+SUMMARY:USR24K – Innovation et Intelligence stragétique
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : TD\nEnseignant : Mme HANNA Marie\nSéance 30/33\nUE : Tr
+ ansitions S7\nThématique : Bilan S1
+END:VEVENT
+BEGIN:VEVENT
+UID:2c257d0899020903e5ec@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270129T090000
+DTEND;TZID=Europe/Paris:20270129T123000
+SUMMARY:USR24K – Innovation et Intelligence stragétique
+LOCATION:Salle 108 – Centre de Nancy
+DESCRIPTION:Type : TPAE\nEnseignant : Mme EN COURS RECRUTEMENT ENSEIGNANT\n
+ Séance 28/33\nUE : Transitions S7\nThématique : Bilan S1
+END:VEVENT
+BEGIN:VEVENT
+UID:341a655374e19352fd0c@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270129T090000
+DTEND;TZID=Europe/Paris:20270129T123000
+SUMMARY:USR24K – Innovation et Intelligence stragétique
+LOCATION:Salle 201 – Centre de Nancy
+DESCRIPTION:Type : TPAE\nEnseignant : Mme EN COURS RECRUTEMENT ENSEIGNANT\n
+ Séance 28/33\nUE : Transitions S7\nThématique : Bilan S1
+END:VEVENT
+BEGIN:VEVENT
+UID:0ad96a44cdf791e8248e@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270129T133000
+DTEND;TZID=Europe/Paris:20270129T183000
+SUMMARY:USR24K – Innovation et Intelligence stragétique
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : TD\nEnseignant : Mme HANNA Marie\nSéance 33/33\nUE : Tr
+ ansitions S7\nThématique : Bilan S1
+END:VEVENT
+BEGIN:VEVENT
+UID:f01e663412f480a58408@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270129T133000
+DTEND;TZID=Europe/Paris:20270129T170000
+SUMMARY:USR24K – Innovation et Intelligence stragétique
+LOCATION:Salle 108 – Centre de Nancy
+DESCRIPTION:Type : TPAE\nEnseignant : Mme EN COURS RECRUTEMENT ENSEIGNANT\n
+ Séance 31/33\nUE : Transitions S7\nThématique : Bilan S1
+END:VEVENT
+BEGIN:VEVENT
+UID:f9181b8ac77a225681f3@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270129T133000
+DTEND;TZID=Europe/Paris:20270129T170000
+SUMMARY:USR24K – Innovation et Intelligence stragétique
+LOCATION:Salle 201 – Centre de Nancy
+DESCRIPTION:Type : TPAE\nEnseignant : Mme EN COURS RECRUTEMENT ENSEIGNANT\n
+ Séance 31/33\nUE : Transitions S7\nThématique : Bilan S1
+END:VEVENT
+BEGIN:VEVENT
+UID:6b96f01e112eb3e1c1d0@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270308T090000
+DTEND;TZID=Europe/Paris:20270308T123000
+SUMMARY:USBA07 – Voirie et réseaux divers
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : Mme MAURICE Sylvie\nSéance 32/50\nU
+ E : Sciences et techniques de l'ingénieur BTP 3\nThématique : Bilan S1
+END:VEVENT
+BEGIN:VEVENT
+UID:d5fe81c648ccc8b91b85@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270308T133000
+DTEND;TZID=Europe/Paris:20270308T170000
+SUMMARY:USBA07 – Dynamique des structures
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M MOHRI Foudil\nSéance 33/50\nUE : 
+ Sciences et techniques de l'ingénieur BTP 3\nThématique : Bilan S1
+END:VEVENT
+BEGIN:VEVENT
+UID:63833283e0ac118ed8fe@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270309T090000
+DTEND;TZID=Europe/Paris:20270309T123000
+SUMMARY:USR24P
+LOCATION:Salle 303 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  1/44\nThématique : Bilan S1
+END:VEVENT
+BEGIN:VEVENT
+UID:7e81b041943ffc22f863@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270309T090000
+DTEND;TZID=Europe/Paris:20270309T123000
+SUMMARY:USR24P
+LOCATION:Salle 304 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  1/44\nThématique : Bilan S1
+END:VEVENT
+BEGIN:VEVENT
+UID:6f421d9510f61c7ce530@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270309T090000
+DTEND;TZID=Europe/Paris:20270309T123000
+SUMMARY:USR24P
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  1/44\nThématique : Bilan S1
+END:VEVENT
+BEGIN:VEVENT
+UID:5ce51a9ee6ad69d24b38@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270309T133000
+DTEND;TZID=Europe/Paris:20270309T170000
+SUMMARY:USR24P – Confrontation à la démarche de Recherche
+LOCATION:Salle 304 – Centre de Nancy
+DESCRIPTION:Type : Cours Transition\nEnseignant : M AL MAHMOUD Firas\nSéan
+ ce 4/44\nUE : Transitions S8\nThématique : Uniquement pour les ING74 A2
+END:VEVENT
+BEGIN:VEVENT
+UID:0fd1b67217a91f8d49ec@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270310T090000
+DTEND;TZID=Europe/Paris:20270310T123000
+SUMMARY:USBA07 – Dynamique des structures
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M MOHRI Foudil\nSéance 34/50\nUE : 
+ Sciences et techniques de l'ingénieur BTP 3\nThématique : Uniquement pou
+ r les ING74 A2
+END:VEVENT
+BEGIN:VEVENT
+UID:eea9d9de06d2511545ce@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270310T133000
+DTEND;TZID=Europe/Paris:20270310T170000
+SUMMARY:USBA09
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M CONSOLI Francois-Xavier\nSéance 7
+ /11\nThématique : Uniquement pour les ING74 A2
+END:VEVENT
+BEGIN:VEVENT
+UID:ea83c15b23aa457954a9@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270311T090000
+DTEND;TZID=Europe/Paris:20270311T123000
+SUMMARY:USR24P – Projets innovants et activités nouvelles et durables
+LOCATION:Salle 201 – Centre de Nancy
+DESCRIPTION:Type : Cours Transition\nEnseignant : Mme HANNA Marie\nSéance 
+ 5/44\nUE : Transitions S8\nThématique : Uniquement pour les ING74 A2
+END:VEVENT
+BEGIN:VEVENT
+UID:e5ab53e60a451786acac@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270311T133000
+DTEND;TZID=Europe/Paris:20270311T170000
+SUMMARY:USBA12
+LOCATION:Salle 303 – Centre de Nancy
+DESCRIPTION:Type : Cours mutualisé\nEnseignant : M CONSOLI Francois-Xavier
+ \nSéance 31/57\nThématique : Uniquement pour les ING74 A2
+END:VEVENT
+BEGIN:VEVENT
+UID:f8b03ab110e15c6a91f0@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270312T090000
+DTEND;TZID=Europe/Paris:20270312T123000
+SUMMARY:USBA07 – Dynamique des structures
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M MOHRI Foudil\nSéance 35/50\nUE : 
+ Sciences et techniques de l'ingénieur BTP 3\nThématique : Uniquement pou
+ r les ING74 A2
+END:VEVENT
+BEGIN:VEVENT
+UID:6ea807d97d0859766cef@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270312T133000
+DTEND;TZID=Europe/Paris:20270312T170000
+SUMMARY:USBA07 – Dynamique des structures
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M MOHRI Foudil\nSéance 36/50\nUE : 
+ Sciences et techniques de l'ingénieur BTP 3\nThématique : Uniquement pou
+ r les ING74 A2
+END:VEVENT
+BEGIN:VEVENT
+UID:47eb0dae752255f91dd7@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270315T090000
+DTEND;TZID=Europe/Paris:20270315T123000
+SUMMARY:USBA07 – Voirie et réseaux divers
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : Mme MAURICE Sylvie\nSéance 37/50\nU
+ E : Sciences et techniques de l'ingénieur BTP 3\nThématique : Uniquement
+  pour les ING74 A2
+END:VEVENT
+BEGIN:VEVENT
+UID:7935d45fa06dd02a42ac@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270315T133000
+DTEND;TZID=Europe/Paris:20270315T170000
+SUMMARY:USBA07 – Dynamique des structures
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M MOHRI Foudil\nSéance 38/50\nUE : 
+ Sciences et techniques de l'ingénieur BTP 3\nThématique : Uniquement pou
+ r les ING74 A2
+END:VEVENT
+BEGIN:VEVENT
+UID:6da5723f28d6faae69f2@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270316T090000
+DTEND;TZID=Europe/Paris:20270316T123000
+SUMMARY:USR24P – Confrontation à la démarche de Recherche
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours Transition\nEnseignant : M AL MAHMOUD Firas\nSéan
+ ce 6/44\nUE : Transitions S8\nThématique : Uniquement pour les ING74 A2
+END:VEVENT
+BEGIN:VEVENT
+UID:7204074553d7839f3024@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270316T133000
+DTEND;TZID=Europe/Paris:20270316T170000
+SUMMARY:USR24P
+LOCATION:Sera affichée – Centre de Metz
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  7/44\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:53e7fd022d2845ec0c8c@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270317T090000
+DTEND;TZID=Europe/Paris:20270317T123000
+SUMMARY:USR24P
+LOCATION:Salle 304 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  8/44\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:81afd2cfd694e655071f@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270317T090000
+DTEND;TZID=Europe/Paris:20270317T123000
+SUMMARY:USR24P
+LOCATION:Salle 303 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  8/44\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:6dd30e6a2e7418e779ca@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270317T090000
+DTEND;TZID=Europe/Paris:20270317T123000
+SUMMARY:USR24P
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  8/44\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:4ae19a5a8028ea1ea03b@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270317T133000
+DTEND;TZID=Europe/Paris:20270317T170000
+SUMMARY:USR24P
+LOCATION:Salle 304 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  11/44\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:558aaa471847d36d6314@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270317T133000
+DTEND;TZID=Europe/Paris:20270317T170000
+SUMMARY:USR24P
+LOCATION:Salle 303 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  11/44\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:5843b785e565d2aa2350@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270317T133000
+DTEND;TZID=Europe/Paris:20270317T170000
+SUMMARY:USR24P
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  11/44\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:44d17eb862be741b781c@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270318T090000
+DTEND;TZID=Europe/Paris:20270318T123000
+SUMMARY:USBA07 – Génie Parasismique
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M AL MAHMOUD Firas\nSéance 39/50\nU
+ E : Sciences et techniques de l'ingénieur BTP 3\nThématique : IRT M2P ME
+ TZ
+END:VEVENT
+BEGIN:VEVENT
+UID:6ffd5c1d73a218a81486@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270318T133000
+DTEND;TZID=Europe/Paris:20270318T170000
+SUMMARY:USBA12
+LOCATION:Pas de salle disponible - salle à Nancy impératif – Centre de 
+ Nancy
+DESCRIPTION:Type : Cours mutualisé\nEnseignant : M CONSOLI Francois-Xavier
+ \nSéance 34/57\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:aad063515f71f4fbc578@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270319T090000
+DTEND;TZID=Europe/Paris:20270319T123000
+SUMMARY:USBA07 – Dynamique des structures
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M MOHRI Foudil\nSéance 40/50\nUE : 
+ Sciences et techniques de l'ingénieur BTP 3\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:258507dc82b97f48e8c4@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270319T133000
+DTEND;TZID=Europe/Paris:20270319T170000
+SUMMARY:USBA09
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M CONSOLI Francois-Xavier\nSéance 8
+ /11\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:01378172bdadbe34f9ed@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270322T090000
+DTEND;TZID=Europe/Paris:20270322T123000
+SUMMARY:USBA07 – Voirie et réseaux divers
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : Mme MAURICE Sylvie\nSéance 41/50\nU
+ E : Sciences et techniques de l'ingénieur BTP 3\nThématique : IRT M2P ME
+ TZ
+END:VEVENT
+BEGIN:VEVENT
+UID:b6e357c94c0e22539119@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270322T133000
+DTEND;TZID=Europe/Paris:20270322T170000
+SUMMARY:📝 USBA07 – Dynamique des structures (Examen)
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Examen\nEnseignant : M MOHRI Foudil\nSéance 42/50\nUE :
+  Sciences et techniques de l'ingénieur BTP 3\nComposition en présentiel 
+ · Thématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:132dec56ba8ea255940b@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270324T090000
+DTEND;TZID=Europe/Paris:20270324T123000
+SUMMARY:USR24P
+LOCATION:Salle 304 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  14/44\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:7987d641d51bca8b98cd@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270324T090000
+DTEND;TZID=Europe/Paris:20270324T123000
+SUMMARY:USR24P
+LOCATION:Salle 303 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  14/44\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:3477290be0b583b82595@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270324T090000
+DTEND;TZID=Europe/Paris:20270324T123000
+SUMMARY:USR24P
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  14/44\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:413cf3d82ed2f7401cb5@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270324T133000
+DTEND;TZID=Europe/Paris:20270324T170000
+SUMMARY:USR24P
+LOCATION:Salle 304 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  17/44\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:ea579717da9c8a30fe4f@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270324T133000
+DTEND;TZID=Europe/Paris:20270324T170000
+SUMMARY:USR24P
+LOCATION:Salle 303 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  17/44\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:42489ff8e4a9b6920aef@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270324T133000
+DTEND;TZID=Europe/Paris:20270324T170000
+SUMMARY:USR24P
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  17/44\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:b4fdb0bd46ebb6f9a758@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270325T090000
+DTEND;TZID=Europe/Paris:20270325T123000
+SUMMARY:USR24P
+LOCATION:Salle 304 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  20/44\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:ff7887bcf8a54eb810ab@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270325T090000
+DTEND;TZID=Europe/Paris:20270325T123000
+SUMMARY:USR24P
+LOCATION:Salle 303 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  20/44\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:c4aec948d35020450702@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270325T090000
+DTEND;TZID=Europe/Paris:20270325T123000
+SUMMARY:USR24P
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Transitions\nEnseignant : M GRIFFITHS Stéphane\nSéance
+  20/44\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:bfff489d5a564e994668@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270325T133000
+DTEND;TZID=Europe/Paris:20270325T170000
+SUMMARY:USBA12
+LOCATION:Salle 303 – Centre de Nancy
+DESCRIPTION:Type : Cours mutualisé\nEnseignant : M CONSOLI Francois-Xavier
+ \nSéance 37/57\nThématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:89896063e9838de4adfb@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270326T090000
+DTEND;TZID=Europe/Paris:20270326T103000
+SUMMARY:📝 USBA07 – Voirie et réseaux divers (Examen)
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Examen\nEnseignant : Mme MAURICE Sylvie\nSéance 43/50\n
+ UE : Sciences et techniques de l'ingénieur BTP 3\nComposition en présent
+ iel · Thématique : IRT M2P METZ
+END:VEVENT
+BEGIN:VEVENT
+UID:a01c55cc929b5515581c@planning-cnam-btp
+DTSTAMP:20261126T185546Z
+DTSTART;TZID=Europe/Paris:20270326T133000
+DTEND;TZID=Europe/Paris:20270326T170000
+SUMMARY:USBA09
+LOCATION:Salle 302 – Centre de Nancy
+DESCRIPTION:Type : Cours\nEnseignant : M CONSOLI Francois-Xavier\nSéance 9
+ /11\nThématique : IRT M2P METZ
+END:VEVENT
+END:VCALENDAR
