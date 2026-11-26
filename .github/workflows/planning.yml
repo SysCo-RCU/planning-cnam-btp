@@ -1,0 +1,108 @@
+name: Vérification du planning Cnam BTP
+
+on:
+  # Chaque passage relance lui-même le suivant 10 min plus tard (dernière étape).
+  # La programmation GitHub ci-dessous ne sert que de roue de secours pour redémarrer
+  # la chaîne si elle s'arrête (GitHub saute souvent ces passages programmés).
+  # Pour tout arrêter : onglet Actions → « Vérification du planning Cnam BTP » → Disable workflow.
+  schedule:
+    - cron: '3-59/10 * * * *'
+  workflow_dispatch:
+    inputs:
+      test_email:
+        description: 'Envoyer aussi une notification de test'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write   # enregistrer data/ et planning.ics
+  issues: write     # créer les notifications (issues GitHub)
+  actions: write    # relancer la vérification suivante
+
+concurrency:
+  group: planning
+  cancel-in-progress: false
+
+jobs:
+  verifier:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Noter l'heure de départ
+        run: echo "DEBUT=$(date +%s)" >> "$GITHUB_ENV"
+
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false   # le jeton n'est pas laissé dans .git/config
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 20
+
+      - name: Installer les dépendances (versions figées, sans scripts)
+        run: |
+          npm ci --ignore-scripts --no-audit --no-fund
+          npx playwright install --with-deps chromium
+
+      - name: Lire le planning et comparer
+        env:
+          PLANNING_URL: ${{ secrets.PLANNING_URL }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          WEEKS_AHEAD: '20'
+          TEST_EMAIL: ${{ inputs.test_email }}
+          PAGE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: |
+          # tant que le lien du QR code n'est pas enregistré en secret, il n'y a rien à vérifier
+          if [ -z "$PLANNING_URL" ]; then echo "Secret PLANNING_URL pas encore ajouté : rien à vérifier."; exit 0; fi
+          node scraper/scrape.mjs
+
+      - name: Enregistrer les nouvelles données
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data
+          if [ -f planning.ics ]; then git add planning.ics; fi
+          if git diff --cached --quiet; then
+            echo "Rien à enregistrer."
+          else
+            git commit -m "📅 Mise à jour du planning"
+            DEPOT="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+            git pull --rebase "$DEPOT" main
+            git push "$DEPOT" HEAD:main
+          fi
+
+      - name: Envoyer les notifications GitHub
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          for f in .notif/*.md; do
+            [ -e "$f" ] || continue
+            titre=$(head -n 1 "$f")
+            tail -n +2 "$f" > "$RUNNER_TEMP/corps.md"
+            gh issue create --title "$titre" --body-file "$RUNNER_TEMP/corps.md"
+          done
+
+      - name: Garder une capture en cas d'erreur
+        if: failure()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: debug
+          path: debug/
+          if-no-files-found: ignore
+
+      # Relance la vérification suivante 10 min après le début de celle-ci (même en cas d'échec,
+      # mais pas si le passage a été annulé à la main : annuler un passage arrête la chaîne).
+      - name: Programmer la vérification suivante (dans 10 min)
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          reste=$(( DEBUT + 570 - $(date +%s) ))
+          if [ "$reste" -gt 0 ]; then echo "Attente de ${reste} s"; sleep "$reste"; fi
+          gh workflow run planning.yml --ref main
