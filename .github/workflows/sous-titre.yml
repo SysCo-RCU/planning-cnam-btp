@@ -1,0 +1,27 @@
+# Passage unique : retire « Premier semestre » / « Second semestre » du sous-titre de la page.
+# Ce fichier sera supprimé juste après.
+name: Sous-titre sans semestre
+
+on:
+  push:
+    paths: ['.github/workflows/sous-titre.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  modifier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - run: |
+          cat > "$RUNNER_TEMP/fix.sed" <<'EOF'
+          s#g.replace(/\\s+Annuel$/i, '')#g.replace(/\\s+(Annuel|Premier semestre|Second semestre)$/i, '')#
+          EOF
+          sed -i -f "$RUNNER_TEMP/fix.sed" app.js
+          grep -q "Premier semestre|Second semestre" app.js
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Sous-titre : sans « Premier / Second semestre »"
+          git pull --rebase origin main
+          git push
