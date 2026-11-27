@@ -76,7 +76,7 @@ function preparer() {
   calculerSemaines();
   indexerRecherche();
   const g = ev.find((e) => e.group)?.group;
-  if (g) $('#subtitle').textContent = `Grand Est · ${g.replace(/\s+Annuel$/i, '')}`;
+  if (g) $('#subtitle').textContent = `Grand Est · ${g.replace(/\s+(Annuel|Premier semestre|Second semestre)$/i, '')}`;
 }
 
 /* ================================================================ rendu */
