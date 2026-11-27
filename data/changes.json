@@ -1,1 +1,147 @@
-[]
+[
+  {
+    "at": "2026-11-27T10:21:19.811Z",
+    "changes": [
+      {
+        "kind": "modified",
+        "before": {
+          "id": "2026-12-10T09:00|USR24K|Entreprenariat Intrapreneuriat",
+          "date": "2026-12-10",
+          "start": "09:00",
+          "end": "12:30",
+          "code": "USR24K",
+          "title": "Entreprenariat Intrapreneuriat",
+          "type": "Cnamathon",
+          "room": "Salle 108",
+          "teacher": "Mme HANNA Marie",
+          "exam": false
+        },
+        "after": {
+          "id": "2026-12-10T09:00|USR24K|Entreprenariat Intrapreneuriat",
+          "date": "2026-12-10",
+          "start": "09:00",
+          "end": "12:30",
+          "code": "USR24K",
+          "title": "Entreprenariat Intrapreneuriat",
+          "type": "Cnamathon",
+          "room": "Salle EDA - Sciences Po - 3ème étage",
+          "teacher": "Mme HANNA Marie",
+          "exam": false
+        },
+        "fields": [
+          {
+            "field": "room",
+            "label": "Salle",
+            "old": "Salle 108",
+            "new": "Salle EDA - Sciences Po - 3ème étage"
+          }
+        ]
+      },
+      {
+        "kind": "modified",
+        "before": {
+          "id": "2026-12-10T13:30|USR24K|Entreprenariat Intrapreneuriat",
+          "date": "2026-12-10",
+          "start": "13:30",
+          "end": "17:00",
+          "code": "USR24K",
+          "title": "Entreprenariat Intrapreneuriat",
+          "type": "Cnamathon",
+          "room": "Salle 108",
+          "teacher": "Mme HANNA Marie",
+          "exam": false
+        },
+        "after": {
+          "id": "2026-12-10T13:30|USR24K|Entreprenariat Intrapreneuriat",
+          "date": "2026-12-10",
+          "start": "13:30",
+          "end": "17:00",
+          "code": "USR24K",
+          "title": "Entreprenariat Intrapreneuriat",
+          "type": "Cnamathon",
+          "room": "Salle EDA - Sciences Po - 3ème étage",
+          "teacher": "Mme HANNA Marie",
+          "exam": false
+        },
+        "fields": [
+          {
+            "field": "room",
+            "label": "Salle",
+            "old": "Salle 108",
+            "new": "Salle EDA - Sciences Po - 3ème étage"
+          }
+        ]
+      },
+      {
+        "kind": "modified",
+        "before": {
+          "id": "2026-12-11T09:00|USR24K|Entreprenariat Intrapreneuriat",
+          "date": "2026-12-11",
+          "start": "09:00",
+          "end": "12:30",
+          "code": "USR24K",
+          "title": "Entreprenariat Intrapreneuriat",
+          "type": "Cnamathon",
+          "room": "Salle 108",
+          "teacher": "Mme HANNA Marie",
+          "exam": false
+        },
+        "after": {
+          "id": "2026-12-11T09:00|USR24K|Entreprenariat Intrapreneuriat",
+          "date": "2026-12-11",
+          "start": "09:00",
+          "end": "12:30",
+          "code": "USR24K",
+          "title": "Entreprenariat Intrapreneuriat",
+          "type": "Cnamathon",
+          "room": "Salle EDA - Sciences Po - 3ème étage",
+          "teacher": "Mme HANNA Marie",
+          "exam": false
+        },
+        "fields": [
+          {
+            "field": "room",
+            "label": "Salle",
+            "old": "Salle 108",
+            "new": "Salle EDA - Sciences Po - 3ème étage"
+          }
+        ]
+      },
+      {
+        "kind": "modified",
+        "before": {
+          "id": "2026-12-11T13:30|USR24K|Entreprenariat Intrapreneuriat",
+          "date": "2026-12-11",
+          "start": "13:30",
+          "end": "17:00",
+          "code": "USR24K",
+          "title": "Entreprenariat Intrapreneuriat",
+          "type": "Cnamathon",
+          "room": "Salle 108",
+          "teacher": "Mme HANNA Marie",
+          "exam": false
+        },
+        "after": {
+          "id": "2026-12-11T13:30|USR24K|Entreprenariat Intrapreneuriat",
+          "date": "2026-12-11",
+          "start": "13:30",
+          "end": "17:00",
+          "code": "USR24K",
+          "title": "Entreprenariat Intrapreneuriat",
+          "type": "Cnamathon",
+          "room": "Salle EDA - Sciences Po - 3ème étage",
+          "teacher": "Mme HANNA Marie",
+          "exam": false
+        },
+        "fields": [
+          {
+            "field": "room",
+            "label": "Salle",
+            "old": "Salle 108",
+            "new": "Salle EDA - Sciences Po - 3ème étage"
+          }
+        ]
+      }
+    ]
+  }
+]
